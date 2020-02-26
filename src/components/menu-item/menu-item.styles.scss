@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid #534343;
   margin: 0 7.5px 15px;
   position: relative;
   overflow: hidden;
@@ -14,8 +14,8 @@
     cursor: pointer;
 
     & .background-image {
-      transform: scale(1.1);
-      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      transform: scale(1.5);
+      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
 
     & .content {
@@ -43,7 +43,7 @@
   }
 
   .content {
-    right: 35%;
+  
     height: 90px;
     padding: 0 25px;
     display: flex;
