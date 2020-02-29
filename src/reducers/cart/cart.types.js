@@ -1,0 +1,6 @@
+export const cartTypesActions = {
+    TOOGLE_CART_HIDDEN:  'TOOGLE_CART_HIDDEN',
+    ADD_ITEM: "ADD_ITEM",
+    CLERA_ITEM_FROM_CART: "CLERA_ITEM_FROM_CART",
+    REDUCE_ITEM: "REDUCE_ITEM"
+}

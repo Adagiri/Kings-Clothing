@@ -1,5 +1,5 @@
 {
-  "name": "kings-clothing",
+  "name": "kings-Rifles",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,9 +12,11 @@
     "react-dom": "^16.12.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.1",
+    "react-scripts": "^3.3.1",
     "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^6.0.0",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
