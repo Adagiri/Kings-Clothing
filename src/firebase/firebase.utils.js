@@ -46,7 +46,6 @@ await userRef.set({
 })
      }
      catch(err){
-  console.log(err.message);
      }
    }
    return userRef
