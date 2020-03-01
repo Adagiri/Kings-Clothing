@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  pistol: {
     id: 1,
     title: "handguns",
     routeName: "pistol",
@@ -63,7 +63,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  smg: {
     id: 2,
     title: "sub machine guns",
     routeName: "smg",
@@ -118,10 +118,10 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  shotgun: {
     id: 3,
     title: "shotgun",
-    routeName: "jackets",
+    routeName: "shotgun",
     items: [
       {
         id: 18,
@@ -160,7 +160,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  assault: {
     id: 4,
     title: "assault rifles",
     routeName: "rifle",
@@ -211,7 +211,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  sniper: {
     id: 5,
     title: "sniper rifles",
     routeName: "sniper",
@@ -256,6 +256,6 @@ const SHOP_DATA = [
       }
     ]
   }
-];
+}
 
 export default SHOP_DATA;

@@ -7,6 +7,7 @@ import {
   selectCartTotal
 } from "../../reducers/cart/cart.selectors";
 import CheckoutItem from "../../components/checkout-item/checkoutItem.components";
+import StripeCheckoutButton from "../../components/sign-up/stripe-button/stripe-button.component";
 
 const Checkout = ({ cartItems, totalPrice }) => (
   <div className="checkout-page animated zoomIn fast">
@@ -34,6 +35,10 @@ const Checkout = ({ cartItems, totalPrice }) => (
     <div className="total">
       <span>TOTAL: ${totalPrice}</span>
     </div>
+    <div className="test-warning">Please use the following test card for payments <br />
+    4242 4242 4242 4242 - Exp: 07/20 - CVV: 123
+    </div>
+    <StripeCheckoutButton price={totalPrice} />
   </div>
 );
 
