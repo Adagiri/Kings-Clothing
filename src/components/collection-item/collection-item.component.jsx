@@ -17,7 +17,7 @@ const CollectionItem = ({ item, addItem }) => {
       ></div>
       <FooterContainer className="collection-footer">
         <Name className="name">{name}</Name>
-        <Price className="price">‎£{price}</Price>
+        <Price className="price">‎${price}</Price>
       </FooterContainer>
       <CustomButton
         className="collection-item__button"

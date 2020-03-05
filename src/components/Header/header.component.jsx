@@ -9,6 +9,7 @@ import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { setUser } from "../../reducers/user/user.selector";
 import { hideCart } from "../../reducers/cart/cart.selectors";
 import { createStructuredSelector } from "reselect";
+import { signOutStart } from "../../reducers/user/user.actions";
 import {
   HeaderContainer,
   OptionDiv,
@@ -17,7 +18,7 @@ import {
   LogoContainer
 } from "./header.styles";
 
-const Header = ({ currentUser, hidden }) => (
+const Header = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>
     <LogoContainer to="/" className=" animated zoomIn fast">
       <Logo className="logo" />
@@ -27,7 +28,7 @@ const Header = ({ currentUser, hidden }) => (
       <OptionLink to="/shop">SHOP</OptionLink>
       <OptionLink to="/contact">CONTACT</OptionLink>
       {currentUser ? (
-        <OptionLink as="div" onClick={() => auth.signOut()}>SIGN OUT</OptionLink>
+        <OptionDiv as="div" onClick={signOutStart}>SIGN OUT</OptionDiv>
       ) : (
         <OptionLink to="/signin">SIGNIN</OptionLink>
       )}
@@ -43,4 +44,8 @@ const mapStateToProps = createStructuredSelector({
   hidden: hideCart
 });
 
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps = dispatch => ({
+  signOutStart: () => dispatch(signOutStart())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
