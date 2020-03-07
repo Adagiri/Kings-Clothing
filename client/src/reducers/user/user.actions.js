@@ -45,6 +45,10 @@ export const signUpSuccess = ({user, additionalData}) => ({
 export const signUpFailure = (error) => ({
     type: userActionTypes.SIGN_UP_FAILURE,
     payload: error
+});
+
+export const checkUserSession = () => ({
+    type: userActionTypes.CHECK_USER_SESSION
 })
 
 
