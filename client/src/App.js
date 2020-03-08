@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-import "./App.css";
 import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 import Homepage from "./pages/homepage/Homepage.Component";
@@ -10,7 +9,7 @@ import Checkout from "./pages/checkout/checkout.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import { setUser } from "./reducers/user/user.selector";
 import { checkUserSession } from "./reducers/user/user.actions";
-// import { shopCollectionsPreview } from "./reducers/shop/shop.selector";
+import { GlobalStyles } from './global.styles';
 
 const App = ({checkUserSession}) => {
 
@@ -20,6 +19,7 @@ const App = ({checkUserSession}) => {
  
     return (
       <div>
+      <GlobalStyles />
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
