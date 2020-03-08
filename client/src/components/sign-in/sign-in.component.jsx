@@ -7,6 +7,7 @@ import {
   googleSignInStart,
   emailSignInStart
 } from "../../reducers/user/user.actions";
+import { Buttons, SignInContainer } from "./sign-in.styles";
 
 const SignIn = ({googleSignInStart, emailSignInStart}) => {
   
@@ -27,7 +28,7 @@ const SignIn = ({googleSignInStart, emailSignInStart}) => {
 
     
     return (
-      <div className="sign-in animated zoomIn">
+      <SignInContainer className="animated zoomIn">
         <h2>I already have an account</h2>
         <span>Sign in with your email and password</span>
 
@@ -48,7 +49,7 @@ const SignIn = ({googleSignInStart, emailSignInStart}) => {
             label="password"
             required
           />
-          <div className="buttons">
+          <Buttons >
             <CustomButton type="submit"> Sign in </CustomButton>
             <CustomButton
               type="button"
@@ -58,9 +59,9 @@ const SignIn = ({googleSignInStart, emailSignInStart}) => {
               {" "}
               Sign in with Google{" "}
             </CustomButton>
-          </div>
+          </Buttons>
         </form>
-      </div>
+      </SignInContainer>
     );
   }
 

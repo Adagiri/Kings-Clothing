@@ -11,7 +11,7 @@ import { setUser } from "./reducers/user/user.selector";
 import { checkUserSession } from "./reducers/user/user.actions";
 import { GlobalStyles } from './global.styles';
 
-const App = ({checkUserSession}) => {
+const App = ({checkUserSession, currentUser}) => {
 
  useEffect(() => {
  checkUserSession();
@@ -28,7 +28,7 @@ const App = ({checkUserSession}) => {
           <Route
             path="/signin"
             render={() =>
-              this.props.currentUser ? (
+              currentUser ? (
                 <Redirect to="/" />
               ) : (
                 <SignInAndSignUpPage />

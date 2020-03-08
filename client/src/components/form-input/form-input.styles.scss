@@ -24,6 +24,11 @@ $main-color: black;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
 
+    @media screen and (max-width: 800px) {
+      width: 95%;
+    
+    }
+
     &:focus {
       outline: none;
     }

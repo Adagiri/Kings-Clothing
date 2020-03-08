@@ -26,9 +26,11 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
 
     <OptionsContainer className="animated zoomIn fast">
       <OptionLink to="/shop">SHOP</OptionLink>
-      <OptionLink to="/contact">CONTACT</OptionLink>
+      <OptionLink to="/checkout">CONTACT</OptionLink>
       {currentUser ? (
-        <OptionDiv as="div" onClick={signOutStart}>SIGN OUT</OptionDiv>
+        <OptionDiv as="div" onClick={signOutStart}>
+          SIGN OUT
+        </OptionDiv>
       ) : (
         <OptionLink to="/signin">SIGNIN</OptionLink>
       )}
@@ -46,6 +48,6 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchToProps = dispatch => ({
   signOutStart: () => dispatch(signOutStart())
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
