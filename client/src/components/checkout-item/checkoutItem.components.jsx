@@ -1,5 +1,4 @@
 import React from "react";
-import "./checkoutItem.styles.scss";
 import {
   clearItem,
   reduceItem,

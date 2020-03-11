@@ -29,4 +29,16 @@ export const clearCart = () => {
   return {
     type: cartTypesActions.CLEAR_CART
   }
-}
+};
+
+export const setCartFromFirebase = (data) => {
+  return {
+    type: cartTypesActions.SET_CART_FROM_FIREBASE,
+    payload: data
+  }
+};
+
+export const updateCartInFirebase = () => ({
+  type: cartTypesActions.UPDATE_CART_IN_FIREBASE
+});
+

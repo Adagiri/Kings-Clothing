@@ -24,7 +24,7 @@ const initialState = {
     {
       title: "Assault RifleS",
       imageUrl:
-        "https://news.wfsu.org/sites/wfsu/files/201906/AdobeStock_88720076.jpeg",
+        "https://i2.wp.com/currentaffairs.gktoday.in/wp-content/uploads/2020/01/AK-203.jpg?fit=1260%2C709&ssl=1",
       size: "large",
       id: 4,
       linkUrl: `shop/${encodeURI('assault rifles')}`

@@ -35,6 +35,7 @@ margin: 0 10px;
 
 export const Name = styled.span`
 width: 23%;
+
 `;
 
 export const Quantity = styled.span`
